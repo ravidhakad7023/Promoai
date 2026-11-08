@@ -1,0 +1,2 @@
+pydantic>=2.12
+pytest>=8

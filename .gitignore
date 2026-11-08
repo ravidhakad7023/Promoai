@@ -1,0 +1,65 @@
+# ---- Confidential screenplay data (NEVER commit) ----
+data/input/
+data/extracted/
+data/output/
+data/cache/
+data/tmp/
+# Catch-all: any screenplay archive / episode text anywhere in the repo
+*.zip
+episode-*.txt
+**/episodes/*.json
+dataset_summary*.json
+# Keep the empty folder structure only
+!data/.gitkeep
+
+# ---- Secrets ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.*
+
+# ---- LLM responses / intermediate artefacts (contain screenplay text) ----
+llm_cache/
+llm_responses/
+*.jsonl
+
+# ---- Python ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ---- Run directories (contain screenplay-derived text, raw model replies, cached parses)
+data/runs/
+
+# ---- Independent evaluation outputs (contain screenplay-derived quotes and candidate-level detail)
+eval/
+
+# ---- Local tooling / logs / scratch ----
+.claude/
+*.log
+*.tmp
+scratch/
+
+# ---- Raw full-run output package for Kuku (contains screenplay-derived text; never publish) ----
+submission/PromoAI_Full_Run_Outputs/
+
+# Never publish submission documents or raw outputs
+submission/
+
+# All local dataset and generated data
+data/

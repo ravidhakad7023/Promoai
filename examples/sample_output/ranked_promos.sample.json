@@ -1,0 +1,49 @@
+{
+  "_note": "SYNTHETIC EXAMPLE: invented values, trimmed to the main fields. Not a real result.",
+  "run_id": "run-v1-20000101T000000Z-0000",
+  "count": 1,
+  "ranking_rule": {
+    "sort_order": ["emotional pull", "standalone clarity", "narrative coherence", "spoiler risk", "earlier episode", "candidate id"],
+    "max_promos": 10,
+    "max_per_episode": 2
+  },
+  "promos": [
+    {
+      "rank": 1,
+      "candidate_id": "W01-C01",
+      "status": "recommended",
+      "decision_stage": "selected",
+      "clip": {
+        "total_duration_s": 35.0,
+        "cross_episode": false,
+        "multi_segment": false,
+        "segments": [
+          {
+            "episode_id": "E001",
+            "episode_number": 1,
+            "start": {"episode_id": "E001", "timecode": "00:10.00", "time_ms": 10000, "line_id": "E001-S01-L005"},
+            "end": {"episode_id": "E001", "timecode": "00:45.00", "time_ms": 45000, "line_id": "E001-S02-L030"},
+            "duration_s": 35.0
+          }
+        ]
+      },
+      "hook": {"line_id": "E001-S01-L005", "kind": "dialogue", "speaker": "<SPEAKER>", "text": "<hook line text omitted>", "offset_s": 0.0},
+      "cliffhanger": {"line_id": "E001-S02-L030", "kind": "dialogue", "speaker": "<SPEAKER>", "text": "<cliffhanger line text omitted>",
+                      "open_question_llm_claim": "<the unresolved question, as stated by the model>"},
+      "qualitative_assessment": {
+        "emotional_pull": "high",
+        "standalone_clarity": "clear",
+        "narrative_coherence": "strong",
+        "spoiler_risk": "minor",
+        "spoiler_note": "<one sentence>"
+      },
+      "one_line_justification": "<one sentence on why this clip works as a promo>",
+      "gates": [
+        {"gate": "duration_20_60s", "passed": true, "kind": "deterministic", "reason": "<reason>"},
+        {"gate": "hook_timing_3s", "passed": true, "kind": "deterministic", "reason": "<reason>"},
+        {"gate": "hook_strength", "passed": true, "kind": "semantic_assessment", "reason": "<3-vote majority>"}
+      ],
+      "ranking_evidence": {"sort_key": [0, 0, 0, 1, 1, "W01-C01"]}
+    }
+  ]
+}

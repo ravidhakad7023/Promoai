@@ -1,0 +1,2 @@
+rank,candidate_id,episodes,clip_windows,total_duration_s,hook_offset_s,hook_line_id,cliffhanger_line_id,emotional_pull,standalone_clarity,narrative_coherence,spoiler_risk,one_line_justification,open_question_llm_claim,cross_episode,multi_segment,adjustments
+1,W01-C01,E001,E001 00:10.00-00:45.00,35.0,0.0,E001-S01-L005,E001-S02-L030,high,clear,strong,minor,<one sentence>,<unresolved question>,False,False,
